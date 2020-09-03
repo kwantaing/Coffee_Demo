@@ -5,7 +5,7 @@ const Image = (props) => {
   // console.log(props.imgInfo.fluid)
     return (
       // <Img fixed={props.imgInfo.fixed} alt="coffee image"></Img>
-      <img className={props.type ? classes.true : classes.false} src={props.imgInfo.fluid.src}></img>
+      <img alt="" className={props.type ? classes.true : classes.false} src={props.imgInfo.fluid.src}></img>
     )
     }
 
