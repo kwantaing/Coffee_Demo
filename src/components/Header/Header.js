@@ -7,14 +7,18 @@ const Header = props => {
   console.log(props.allData)
   return (
     <div className={classes.Header}>
-      <img
-        className={classes.img}
-        src="https://loading.io/s/icon/1cs6ip.svg"
-        alt=""
-      ></img>
+      <Link to="/">
+        <img
+          className={classes.img}
+          src="https://loading.io/s/icon/1cs6ip.svg"
+          alt=""
+        ></img>
+      </Link>
       <ul>
         <li>
-          <Link className={classes.Link} to="/">Home</Link>
+          <Link className={classes.Link} to="/">
+            Home
+          </Link>
         </li>
         <li>
           <div className={classes.Dropdown}>
@@ -35,7 +39,11 @@ const Header = props => {
             </div>
           </div>
         </li>
-        <li><Link className={classes.Link} to="/coffees">All Coffees</Link></li>
+        <li>
+          <Link className={classes.Link} to="/coffees">
+            All Coffees
+          </Link>
+        </li>
       </ul>
     </div>
   )
