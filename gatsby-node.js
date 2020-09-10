@@ -41,6 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
   const coffeeType = path.resolve(`./src/pages/TypeDetail.js`)
   const coffeePage = path.resolve(`./src/pages/coffeePage.js`)
+  const allCoffeePage = path.resolve(`./src/pages/allCoffees.js`);
   queryResults.data.allContentfulCoffeeTypes.nodes.forEach(node => {
     //each coffee type
     createPage({
@@ -63,7 +64,6 @@ exports.createPages = async ({ graphql, actions }) => {
     })
 
   })
-  const allCoffeePage = path.resolve(`./src/pages/allCoffees.js`);
   createPage({
       path: `/coffees`,
       component: allCoffeePage,
